@@ -2,8 +2,8 @@ const app = require('express')();
 const express = require('express');
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const port = 3333;//process.env.PORT; för Herokuapp
-const blackjack = require('./blackjack-min');
+const port = process.env.PORT;// för Herokuapp
+const blackjack = require('./blackjack');
 
 process.on('uncaughtException', function (err) {
   console.error('uncaughtException', err.stack);
