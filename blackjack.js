@@ -18,7 +18,7 @@ exports.createDeck = function (game, nrOfDecks = 10) {
                     suit: suits[i],
                     value: value[n],
                     unicode: "class='" + suits[i] + "'>" + unicode[c],
-                    png: "/png/" + v + suits[i][0] + ".png"
+                    png: "https://raw.githubusercontent.com/Xarczuz/Blackjack-JS/master/PNG/" + v + suits[i][0] + ".png"
                 };
                 game.deck.push(card);
                 c++;
