@@ -212,7 +212,7 @@ io.on('connection', function (socket) {
       var showHand = {
         player: game.player,
         dealer: {
-          name: "dealer", hand: [game.dealer.hand[0], { unicode: "<span class='cardBack'>🂠</span>", png: "/png/blue_back.png" }],
+          name: "dealer", hand: [game.dealer.hand[0], { unicode: "<span class='cardBack'>🂠</span>", png: "https://raw.githubusercontent.com/Xarczuz/Blackjack-JS/master/PNG/blue_back.png" }],
           score: game.dealer.score
         }
       }
